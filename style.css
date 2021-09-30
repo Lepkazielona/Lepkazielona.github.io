@@ -1,0 +1,16 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#Dzionek {
+ background: rgb(251, 255, 0);
+ color: rgb(25, 0, 255);
+ border: 1px solid rgb(255, 38, 0);
+}
