@@ -1,4 +1,4 @@
-var cytaty = [
+const cytaty = [
     {
         "id" : "0",
         "tytuł" : "Nie wiem jak to nazwać",
