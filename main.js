@@ -26,8 +26,8 @@ scene.add(light);
 window.addEventListener("wheel", onMouseWheel)
 function onMouseWheel(){
   const t = document.body.getBoundingClientRect().top;
-  cube.rotation.x += t * 0.0005
-  cube.rotation.y += t * 0.0005
+  cube.rotation.x += 0.05
+  cube.rotation.y += 0.05
 }
 
 function animate(){
