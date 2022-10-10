@@ -16,3 +16,7 @@ main {
   position: absolute;
   font-family: 'JetBrains Mono', monospace;
 }
+
+body {
+  background-color: black;
+}
