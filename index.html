@@ -5,59 +5,84 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
 
-    <canvas id="bg" style=""></canvas>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> 
+
+  </head>
+  <body x-data="{eng: (navigator.language != 'pl-PL')? true : false}">
+
+    <canvas id="bg"></canvas>
     <main>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      <h1 class="text-white">NIGGERS</h1>
-      
+        <div class="bg-white p-5 mt-5 ml-10 w-48">
+            <h1 class="text-2xl">Lpka</h1>
+
+            <label for="default-toggle" class="mt-2 grid grid-cols-3">
+              <span class="ml-3 text-sm font-medium text-gray-900">PL</span>
+              <div class="inline-flex relative items-center cursor-pointer">
+                <input x-model="eng" type="checkbox" value="" id="default-toggle" class="sr-only peer">
+                <div class="w-11 h-6 bg-black peer-focus:outline-none peer-focus:outline-none peer-focus:outline-none dark:peer-focus:outline-none peer peer-checked:after:translate-x-full peer-checked:after:border-none after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:h-5 after:w-5 peer-checked:bg-black"></div>
+              </div>
+              <span class="ml-3 text-sm font-medium text-gray-900">EN</span>
+            </label>
+        </div>
+          
+          <div id="pl" x-show="eng">
+            <div class="bg-white h-30 p-5 mt-20 ml-10">
+              <p class="text-2xl">O mnie</p>
+              <p>Mam 15 lat, mieszkam w Polsce, na śląsku, zajmuje się programowaniem już od około 3 lat</p>
+              <span>Zacząłem pisząc proste skrypty do <a class="underline" href="https://multitheftauto.com/">MTA</a>, modyfikacji multiplayer do GTA San Andreas</span>
+              <p>Po kilku latach udało mi się rozwinąć moje możliwośći do o wiele wyższego poziomu</p>
+            </div>
+            <div class="bg-white h-30 p-5 mt-40 ml-10">
+              <p class="text-2xl">Moje umiejętnośći</p>
+              <p>Jestem samoukiem i cięzko mi jest ocenić swoje umiejętnośći ale wydaje mi się że są na poziomie który pozwala mi na wykonanie mniej lub bardziej zaawanswoanych zleceń</p>
+              <span>Dużą częśc moich prac możecie znaleźć na moim <a class="underline" href="https://github.com/Lepkazielona">GitHubie</a></span>
+              <p>planuje w najbliższej przyszłości udostępnić tam kilka bardziej zaawansowanych projektów</p>
+            </div>
+
+            <div class="bg-white h-30 p-5 mt-40 ml-10 mb-40">
+              <p class="text-2xl">Technologie które używam</p>
+              <ul class="list-disc ml-9">
+                <li>Python</li>
+                <li class="ml-5">Django</li>
+                <li class="ml-5">Raspberry PI</li>
+                <li>C</li>
+                <li class="ml-5">RayLib</li>
+                <li>Dotnet (C#)</li>
+                <li>Lua</li>
+                <li>html, js, css</li>
+
+              </ul> 
+            </div>
+
+
+            </div>
+            <!--
+              <div class="bg-white h-30 p-5 mt-20 ml-10">
+                <p class="text-2xl">Prawdopodobnie Full Stack Developer</p>
+                <p>Programuje już od około trzech lat</p>
+                <p>zdążyłem nabrać doświadczenia w technologiach frontendowych jak i backendowych</p>
+                <p>Jestem samoukiem i nie potrafie ocenić czy moge się już nazwać Developerem</p>
+              </div>
+              
+              <div class="bg-white h-30 p-5 mt-48 ml-10">
+                <p class="text-2xl">Technologie z jakich korzystam</p>
+                <p>Programuje już od około trzech lat</p>
+                <p>zdążyłem nabrać doświadczenia w technologiach frontendowych jak i backendowych</p>
+                <p>Jestem samoukiem i nie potrafie ocenić czy moge się już nazwać Developerem</p>
+              -->
+            </div>
+          
+          </div>
+          <div id="pl" x-show="!eng">
+
+            <div class="bg-white h-30 p-5 mt-20 ml-10">
+              <p class="text-2xl">ENG</p>
+            </div>
+          </div>
+          <p x-text="eng"></p>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

@@ -1,7 +1,13 @@
 import './style.css'
 
 import * as THREE from 'three'
+import Alpine from 'alpinejs'
+import axios from 'axios'
 
+window.Alpine = Alpine
+Alpine.start()
+
+console.log(navigator.language)
 
 const scene = new THREE.Scene();
 
@@ -20,8 +26,13 @@ const material = new THREE.MeshLambertMaterial( {color: 0xffffff} );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-var light = new THREE.AmbientLight(0x404040);
+//var light = new THREE.AmbientLight(0xc8c8c8);
+var light = new THREE.PointLight(0xc8c8c8, 1, 100)
+light.position.set(-1,0,2)
+//const helper = new THREE.DirectionalLightHelper( light, 5 );
+//const helper = new THREE.PointLightHelper(light, 1)
 scene.add(light);
+//scene.add(helper)
 
 window.addEventListener("touchmove", onMouseWheel)
 window.addEventListener("wheel", onMouseWheel)
