@@ -23,6 +23,7 @@ scene.add( cube );
 var light = new THREE.AmbientLight(0x404040);
 scene.add(light);
 
+window.addEventListener("touchmove", onMouseWheel)
 window.addEventListener("wheel", onMouseWheel)
 function onMouseWheel(){
   const t = document.body.getBoundingClientRect().top;
